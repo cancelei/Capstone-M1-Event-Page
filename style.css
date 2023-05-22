@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 .hide {
@@ -10,4 +11,123 @@
 
 .show {
   visibility: visible;
+}
+
+
+/* Upper Nav Styling */
+
+@media (min-width: 768px) {
+  .upperNav {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    padding-left: 50%;
+    gap: 10px;
+    align-items: center;
+    height: 1.5rem;
+    text-decoration: none;
+  }
+
+  .upperNavLinks {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.upperNavSocial {
+  display: none;
+}
+
+/* Nav section */
+
+.navLinks {
+  color: black;
+  text-decoration: none;
+}
+
+.NavLogo {
+  height: 40px;
+  width: 40px;
+}
+
+/* Intro section */
+
+.intro-section {
+  background: url(./Assets/main-background.jpg);
+  height: 80vh;
+  background-size: cover;
+}
+
+.intro-upperTitle {
+  padding-top: 10%;
+  padding-left: 10%;
+  color: rgb(151, 109, 31);
+}
+
+.intro-mainTitle {
+  color: rgb(151, 109, 31);
+  opacity: 0.8;
+  padding-left: 10%;
+}
+
+.intro-box-paragraph {
+  padding-left: 0;
+  border: 2px solid white;
+  background-color: rgb(202, 196, 196);
+  margin: 2% 5% 2% 5%;
+}
+
+.intro-paragraph {
+  padding-left: 5%;
+}
+
+.intro-date {
+  padding: 5% 0 5% 10%;
+}
+
+.intro-location {
+  padding-left: 10%;
+}
+
+/* Section Main Program */
+
+.Main-program {
+  background-color: black;
+}
+
+.Main-program-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTitle {
+  color: white;
+  text-align: center;
+  padding: 5%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(219, 212, 212);
+  opacity: 0.5;
+  gap: 10px;
+  margin: 3%;
+}
+
+.cardicon {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  margin: 0 0.5% 0 3%;
+}
+
+.cardtitle {
+  color: rgb(151, 109, 31);
+  align-self: center;
+}
+
+.cardparagraph {
+  color: white;
 }
