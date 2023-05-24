@@ -67,26 +67,38 @@
 
 .intro-paragraph {
   padding-left: 5%;
+  line-height: 220%;
+  font-size: 1.125em;
+  text-align: justify;
 }
 
 .intro-date {
   padding: 5% 0 5% 10%;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0px;
 }
 
 .intro-location {
   padding-left: 10%;
+  font-size: 15px;
+  text-align: center;
 }
 
 /* Section Main Program */
 
 .Main-program {
-  background: #272A31 url(Assets/pattern_bg_black.png);
+  color: white;
+  background-color: var(--black);
+  background-image: url(Assets/pattern_bg_new.png);
 }
 
 .Main-program-cards {
+  color: white;
   display: flex;
   flex-direction: column;
-  padding: 5% 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainTitle {
@@ -100,12 +112,12 @@
 .cards {
   display: flex;
   flex-direction: row;
-  background-color: var(--grey);
-  opacity: 0.3;
+  background-color: rgba(255, 255, 255, 0.1);
   gap: 10px;
-  margin: 1% 20px;
-  padding: 10px 5px 10px 2px;
+  margin: 1% 1%;
+  /* padding: 10px 5px 10px 2px; */
   flex-grow: 1;
+  width: 95%;
 }
 
 .cardicon {
@@ -119,6 +131,7 @@
   color: var(--orange);
   align-self: center;
   font-size: 14px;
+  min-width: 71px;
 }
 
 .cardparagraph {
@@ -126,8 +139,7 @@
   font-size: 0.75em;
   line-height: 1.5em;
   opacity: 1;
-  position: relative;
-  z-index: 3;
+  align-self: center;
 }
 
 
@@ -244,6 +256,7 @@
 
   .speakercard {
     padding: 1%;
+    width: 50%;
   }
 
   .speakertitle {
@@ -256,14 +269,19 @@
   }
 
   .Main-program-cards {
+    display: flex;
     flex-direction: row;
-    padding: 1% 1%;
+    justify-content: center;
+    /* padding: 1% 1%; */
   }
 
   .cards {
     display: flex;
     flex-direction: column;
-    padding: 2% 1%;
-    margin: 5% 0.5%;
+    /* padding: 2% 1%; */
+    /* margin: 5%; */
+    min-height: 170px;
+    justify-content: space-around;
+    text-align: center;
   }
 }
