@@ -203,6 +203,15 @@
   height: 100%;
 }
 
+/* Speaker Button */
+
+.btnspeaker {
+  align-items: center;
+  width: 33%;
+  height: 40px;
+  margin: 0 33%;
+}
+
 /* Desktop Adjustments */
 
 @media (min-width: 768px) {
@@ -270,12 +279,12 @@
   .cards {
     display: flex;
     flex-direction: column;
-
-    /* padding: 2% 1%; */
-
-    /* margin: 5%; */
     min-height: 170px;
     justify-content: space-around;
     text-align: center;
+  }
+
+  .btnspeaker {
+    display: none;
   }
 }
