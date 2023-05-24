@@ -9,6 +9,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  text-decoration: none;
 }
 
 .hide {
@@ -21,30 +22,6 @@
 
 
 /* Upper Nav Styling */
-
-@media (min-width: 768px) {
-  .upperNav {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    color: white;
-    padding-left: 50%;
-    gap: 10px;
-    align-items: center;
-    height: 1.5rem;
-    text-decoration: none;
-  }
-
-  .upperNavLinks {
-    text-decoration: none;
-    color: white;
-  }
-
-  .NavLogo {
-    height: 40px;
-    width: 40px;
-  }
-}
 
 .upperNavSocial {
   display: none;
@@ -103,76 +80,190 @@
 /* Section Main Program */
 
 .Main-program {
-  background-color: black;
+  background: #272A31 url(Assets/pattern_bg_black.png);
 }
 
 .Main-program-cards {
   display: flex;
   flex-direction: column;
+  padding: 5% 0;
 }
 
 .mainTitle {
   color: white;
   text-align: center;
   padding: 5%;
+  font-size: 24px;
+  width: auto;
 }
 
 .cards {
   display: flex;
   flex-direction: row;
   background-color: var(--grey);
-  opacity: 0.5;
+  opacity: 0.3;
   gap: 10px;
-  margin: 3%;
+  margin: 1% 20px;
+  padding: 10px 5px 10px 2px;
+  flex-grow: 1;
 }
 
 .cardicon {
-  width: 30px;
-  height: 30px;
+  width: 64px;
+  height: 58px;
   align-self: center;
-  margin: 0 0.5% 0 3%;
+  margin: 0 0.5% 0 0;
 }
 
 .cardtitle {
   color: var(--orange);
   align-self: center;
+  font-size: 14px;
 }
 
 .cardparagraph {
   color: white;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  opacity: 1;
+  position: relative;
+  z-index: 3;
 }
 
 
 /* Section Speakers */
 
 .speakersection {
-
+  
 }
 
 .titlespeakers {
-
+  text-align: center;
+  padding: 5% 0;
 }
 
-.speakerparent {
+.underline {
+  display: block;
+  margin: auto;
+  padding-bottom: 10%;
+}
 
+.speakerparent1,
+.speakerparent2,
+.speakerparent3 {
+  display: flex;
+  flex-direction: column;
 }
 
 .speakercard {
+  padding: 3% 2.5%;
+}
 
+.speaker-header {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0.5;
+  height:100%;
 }
 
 .speakerimg {
+  padding: 1%;
+  height:100%;
+}
 
+.headerdescription {
+  padding: 0 3%;
+  height: 10vh;
+  width: 100%;
 }
 
 .speakername {
-
+  font-size: 16px;
+  color: var(--black);
 }
 
 .speakertitle {
-
+  color: var(--orange);
+  font-size: 13px;
+  /* text-align: justify; */
+  height: 100%;
 }
 
 .speakerdescription {
-  
+  padding: 0 5%;
+  font-size: 13px;
+  text-align: justify;
+  height: 100%;
+}
+
+.speakerdescriptiondesktop {
+  visibility: hidden;
+}
+
+/* Desktop Adjustments */
+
+@media (min-width: 768px) {
+  .upperNav {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    padding-left: 50%;
+    gap: 10px;
+    align-items: center;
+    height: 1.5rem;
+    text-decoration: none;
+  }
+
+  .upperNavLinks {
+    text-decoration: none;
+    color: white;
+  }
+
+  .NavLogo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .speakerdescriptiondesktop {
+    visibility: visible;
+    font-size: 14px;
+  }
+
+  .speakerdescription {
+    display: none;
+  }
+
+  .speakerparent1,
+  .speakerparent2,
+  .speakerparent3 {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+  }
+
+  .speakercard {
+    padding: 1%;
+  }
+
+  .speakertitle {
+    font-size: 13px;
+    height: 50%;
+  }
+
+  .speakername {
+    font-size: 22px;
+  }
+
+  .Main-program-cards {
+    flex-direction: row;
+    padding: 1% 1%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 1%;
+    margin: 5% 0.5%;
+  }
 }
