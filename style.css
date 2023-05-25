@@ -207,9 +207,46 @@
 
 .btnspeaker {
   align-items: center;
-  width: 33%;
-  height: 40px;
-  margin: 0 33%;
+  width: 88%;
+  height: 45px;
+  margin: 0 6%;
+  font-size: 14px;
+  background-color: white;
+  border: solid 1px var(--grey);
+  border-radius: 4px;
+}
+
+.btnJoin {
+  color: white;
+  background-color: var(--orange);
+  width: 46%;
+  margin-left: 27%;
+  height: 50px;
+  border-style: outset;
+  border: none;
+  font-size: 14px;
+}
+
+.sectionfooter {
+  background-color: var(--black);
+  height: auto;
+}
+
+.partner {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.partnerlogoparent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.partnerlogoparent > * {
+  flex: 1 1 50px;
+  max-width: 33%;
+  padding: 34px;;
 }
 
 /* Desktop Adjustments */
