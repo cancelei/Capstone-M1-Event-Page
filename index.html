@@ -21,24 +21,17 @@
 
 <!-- Navigation and Menu - Draft -->
 
-<nav class="mobile-nav-bar">
-  <a class="intro-section__headtitle" href="/">A</a>
-  <div class="hamburguer-menu" alt="mobile menu"
-  onclick="menuOpen()"><img src="/Assets/mobile_menu.png">
-  </div>
-  <div id="menu" class="menu_basic">
-    <div class="menu-items">
-      <div class="close" onclick="menuClose()"><img src="/Assets/close.svg">
-      </div>
-        <div class="mobile-links">
-          <a class="navLinks" href="/about.html">About</a>
-          <a class="navLinks" href="/">Program</a>
-          <a class="navLinks" href="/">Join</a>
-          <a class="navLinks" href="/">Sponsor</a>
-          <a class="navLinks" href="/">News</a>
-          <a class="navLinks" href="/">CC Campaign</a>      </div>
-    </div>
-  </div>
+<nav class="nav">
+  <a href="index.html"><img id="nav-logo" src="Assets/Logo.png" alt="Event Logo"></a>
+  <ul class="nav-list">
+      <li><a id="about" href="about.html">About</a></li>
+      <li><a href="#">Program</a></li>
+      <li><a href="#">Join</a></li>
+      <li><a href="#">News</a></li>
+      <li><a id="nav-button" href="#">CC campaign</a></li>
+  </ul>
+      <img class="close" src="Assets/close.svg" alt="" srcset="">
+      <img class="burger" src="Assets/mobile_menu.png" alt="burger icon" srcset="">
 </nav>
 
   <!-- Section intro -->
@@ -62,132 +55,40 @@
       <img class="underline" src="Assets/title_underlineMain_program.svg" alt="underline">
       <br><br>
       <div class="Main-program-cards">
-
         <div class="cards">
           <img src="Assets/regador.png" alt="" class="cardicon"></img>
           <h4 class="cardtitle">Plantations</h4>
           <p class="cardparagraph">Plant in any soil, nurture it in less than 5 years. All you need to know.
           </p>
         </div>
-
         <div class="cards">
           <img src="Assets/balde.png" alt="" class="cardicon"></img>
           <h4 class="cardtitle">Water usage</h4>
           <p class="cardparagraph">Overview on how sustainable farming, and a long term asset correlate.
           </div>
-
         <div class="cards">
           <img src="Assets/espatula.png" alt="" class="cardicon"></img>
           <h4 class="cardtitle">Soil Work</h4>
           <p class="cardparagraph">How to have the best soil profile in you own land, with experts.
         </div>
-
         <div class="cards">
           <img src="Assets/fabrica.png" alt="" class="cardicon"></img>
           <h4 class="cardtitle">Workshop</h4>
           <p class="cardparagraph">Business Modeling for sustainable Farming Activities.
         </div>
-
         <div class="cards">
           <img src="Assets/inseticida.png" alt="" class="cardicon"></img>
           <h4 class="cardtitle">Motivation on Farm's</h4>
           <p class="cardparagraph">Lecture on how to gradually increase consciousness of the individual.
         </div>
-
     </div>
     <br><br><br><button class="btnJoin">JOIN PERMACULTURE FEST 2023!</button>
   </section>
 
   <!-- Section Speakers -->
-  <section class="speakersection">
-    <h3 class="titlespeakers">Key Speakers</h3>
+  <section class="speakersection"></section>
 
-
-    <img class="underline" src="Assets/title_underlineMain_program.svg" alt="underline">
-      
-    <div class="speakerparent1">
-      <div class="speakercard">
-        <div class="speaker-header">
-          <img class="speakerimg" src="/Assets/Speakers/speaker_01.png" alt="Foto of Yohai Benkler">
-          <div class="headerdescription">
-            <a href="linkedin.com" class="speakername">Bernekie Ozie He</a>
-            <div class="speakertitle">Ex-Astronaut and TED Speaker</div>
-            <div class="speakerdescriptiondesktop">Motivation is what drives change in the world. Wrote several books like 'From Space to earth', 'How Team's can outperform their Status Quo' and 'The origin's of EQ: 360o Emotional Inteligence', motivational speaker and Master Coach. 
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="speakercard">
-        <div class="speaker-header">
-          <img class="speakerimg" src="/Assets/Speakers/speaker_02.png" alt="Foto of Guntler Honda">
-          <div class="headerdescription">
-            <a href="linkedin.com" class="speakername">Guntler Honda</a>
-            <div class="speakertitle">CEO at Hawk Farm Operations</div>
-            <div class="speakerdescriptiondesktop">Association for Farm Cooperatives, that uses tecnology to build a viable and sustainable ecossistem. Contribution to SDG 2030 and other initiatives.
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-  <div class="speakerparent2">
-    <div class="speakercard">
-      <div class="speaker-header">
-        <img class="speakerimg" src="/Assets/Speakers/speaker_03.png" alt="Foto of Yohai Benkler">
-        <div class="headerdescription">
-          <a href="linkedin.com" class="speakername">Koi Zanty</a>
-          <div class="speakertitle">Professor at Beijing University</div>
-          <div class="speakerdescriptiondesktop">Focusing on a collaborative approach in a networked environment, we created the concept of co-production based on sharing with open source software and Wikipedia.
-            (Major books: The Green Frontier from 2020 to 2030)
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="speakercard">
-      <div class="speaker-header">
-        <img class="speakerimg" src="/Assets/Speakers/speaker_04.png" alt="Foto of Oxoki Humbert">
-        <div class="headerdescription">
-          <a href="linkedin.com" class="speakername">Oxoki Humbert</a>
-          <div class="speakertitle">PhD, Professor at South African University</div>
-          <div class="speakerdescriptiondesktop">Focusing on a collaborative approach in a networked environment, we created the concept of co-production based on sharing with open source software and Wikipedia.
-            (Major books: The Farm Wealth, People and Animals)
-          </div>
-        </div>
-      </div>
-  </div>
-</div>    
-
-<div class="speakerparent3">
-  <div class="speakercard">
-    <div class="speaker-header">
-      <img class="speakerimg" src="/Assets/Speakers/speaker_05.png" alt="Foto of Johanna Betley">
-      <div class="headerdescription">
-        <a href="linkedin.com" class="speakername">Johanna Betley</a>
-        <div class="speakertitle">Counsel Member at MIT</div>
-        <div class="speakerdescriptiondesktop">Focusing on Tecnology use in farming. How automation can improve the management costs and long term proftability for a better future.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="speakercard">
-    <div class="speaker-header">
-      <img class="speakerimg" src="/Assets/Speakers/speaker_06.png" alt="Foto of John Witt">
-      <div class="headerdescription">
-        <a href="linkedin.com" class="speakername">John Witt</a>
-        <div class="speakertitle">Professor at Harvard Soil Studies</div>
-        <div class="speakerdescriptiondesktop">Focusing on a collaborative approach in a networked environment, we created the concept of co-production based on sharing with open source software and Wikipedia.
-          (Major books: The Wealth of the Network, Penguins and Leviathan)
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
-<button class="btnspeaker">MORE</button>
-<br><br>
-  </section>
+  <!-- Footer Section with Partner Information -->
   <footer class="sectionfooter">
     <h3 class="partner mainTitle">Partner</h3><br>
     <img class="underline" src="Assets/title_underlineMain_program.svg" alt="underline">
@@ -199,7 +100,6 @@
       <img src="Assets/Partner/mozilla 1partner_.svg" alt="Mozilla">
       <img src="Assets/Partner/naver 1partner_.svg" alt="Naver">
     </div>
-
   </footer>
 
 <!-- Javascript link -->

@@ -23,34 +23,53 @@
 /* Upper Nav Styling */
 
 .upperNavSocial {
-  visibility: hidden;
+  display: none;
 }
 
 /* Nav section */
 
-.navLinks {
-  color: var(--black);
+#nav-logo {
+  width: 100px;
+  height: 80px;
+}
+
+a {
   text-decoration: none;
 }
 
-.NavLogo {
+.nav {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.nav-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  font-size: 1rem;
+}
+
+#nav-button {
+  border: 4px solid var(--primary-color);
+  padding: 10px;
+  width: 8em;
+  text-align: center;
+}
+
+.close {
   display: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
 }
 
-.hamburguer-menu {
-  display: block;
-}
-
-.menu_open {
-  display: block;
-}
-
-.menu-items {
+.burger {
   display: none;
-}
-
-.mobile-links {
-  
+  margin: 30px 0 0 40px;
+  width: 30px;
+  cursor: pointer;
 }
 
 /* Intro section BG Issue is Consistent */
@@ -273,6 +292,77 @@
 /* Desktop Adjustments */
 
 @media (min-width: 768px) {
+  .burger {
+    display: block;
+    position: absolute;
+    z-index: 500;
+  }
+
+  .burger.active {
+    display: none;
+  }
+
+  .close {
+    display: none;
+    position: fixed;
+    left: 60%;
+    z-index: 565621545;
+    margin-top: 1.3em;
+  }
+
+  .close.active {
+    display: block;
+  }
+
+  .above-nav {
+    display: none;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    opacity: 0.9;
+    width: 70%;
+    background-color: #272a31;
+    z-index: 88888;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+    gap: 30px;
+  }
+
+  .nav-list li {
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+  }
+
+  .nav-list li a {
+    color: aliceblue;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  #nav-logo {
+    width: 60px;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 76%;
+    bottom: 0;
+    top: 0;
+    z-index: 5654656565;
+    margin-top: 1em;
+  }
+
+  #nav-button {
+    border: 4px solid var(--primary-color);
+    padding: 10px;
+    width: 8em;
+  }
+
   .hamburguer-menu {
     display: none;
   }
@@ -390,5 +480,5 @@
 
 .eventphotoparent > * {
   min-width: 350px;
-  padding: 20px;
+  padding: 5% 5% 1% 5%;
 }
