@@ -40,9 +40,7 @@
 /* Intro section BG Issue is Consistent*/
 
 .intro-section {
-  background-color: rgba(243, 12, 12, 0.5) ;
-  background-image: url(Assets/main-background.jpg);
-  background-color: transparent;
+  background-image: linear-gradient(rgba(17, 9, 9, 0.7), rgba(17, 9, 9, 0.3), rgba(255, 255, 255, 0.5)), url(Assets/main-background.jpg);
   height: auto;
   background-size: cover;
 }
