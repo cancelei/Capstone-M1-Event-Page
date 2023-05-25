@@ -37,11 +37,13 @@
   display: none;
 }
 
-/* Intro section */
+/* Intro section BG Issue is Consistent*/
 
 .intro-section {
-  background: url(./Assets/main-background.jpg);
-  height: 80vh;
+  background-color: rgba(243, 12, 12, 0.5) ;
+  background-image: url(Assets/main-background.jpg);
+  background-color: transparent;
+  height: auto;
   background-size: cover;
 }
 
@@ -49,23 +51,29 @@
   padding-top: 10%;
   padding-left: 10%;
   color: var(--orange);
+  font-size: 3rem;
 }
 
 .intro-mainTitle {
   color: var(--orange);
-  opacity: 0.8;
+  opacity: 0.99;
   padding-left: 10%;
+  font-size: 2.5rem;
+  text-decoration-color: #ec5242;
+  text-decoration: var(--black) solid 1px;
 }
 
 .intro-box-paragraph {
-  padding-left: 0;
+  padding-left: 1px;
   border: 2px solid white;
   background-color: var(--grey);
-  margin: 2% 5% 2% 5%;
+  margin: 2% 5% 2% 12%;
+  width: 45%;
+  opacity: 0.66;
 }
 
 .intro-paragraph {
-  padding-left: 5%;
+  padding: 2%;
   line-height: 220%;
   font-size: 1.125em;
   text-align: justify;
@@ -73,15 +81,16 @@
 
 .intro-date {
   padding: 5% 0 5% 10%;
-  font-size: 15px;
-  text-align: center;
+  font-size: 2.4rem;
+  text-align: left;
   letter-spacing: 0;
+  text-stroke: var(--grey);
 }
 
 .intro-location {
   padding-left: 10%;
-  font-size: 15px;
-  text-align: center;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 /* Section Main Program */
@@ -324,4 +333,43 @@
   .btnspeaker {
     display: none;
   }
+}
+
+/* About Page */
+
+.ac {
+  align-items: center;
+  text-align: center;
+}
+
+.aboutmain {
+  background-color: white;
+}
+
+.eventlogobig {
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  align-content: center;
+  width: 35%;
+  height: 35%;
+  margin-left: 33%;
+}
+
+.sub {
+
+}
+
+.pasteventssection {
+
+}
+
+.eventphotoparent {
+  display: flex;
+  flex-direction: column;
+}
+
+.eventphotoparent > * {
+  min-width: 350px;
+  padding: min(20px, 2%);
 }
