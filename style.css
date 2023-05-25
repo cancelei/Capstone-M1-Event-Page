@@ -38,11 +38,19 @@
 }
 
 .hamburguer-menu {
-  visibility: visible;
+  display: block;
 }
 
 .menu_open {
-  visibility: visible;
+  display: block;
+}
+
+.menu-items {
+  display: none;
+}
+
+.mobile-links {
+  
 }
 
 /* Intro section BG Issue is Consistent */
@@ -266,11 +274,11 @@
 
 @media (min-width: 768px) {
   .hamburguer-menu {
-    visibility: hidden;
+    display: none;
   }
 
   .upperNavSocial {
-    visibility: visible;
+    display: block;
   }
 
   .upperNav {
