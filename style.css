@@ -23,7 +23,7 @@
 /* Upper Nav Styling */
 
 .upperNavSocial {
-  display: none;
+  visibility: hidden;
 }
 
 /* Nav section */
@@ -37,7 +37,15 @@
   display: none;
 }
 
-/* Intro section BG Issue is Consistent*/
+.hamburguer-menu {
+  visibility: visible;
+}
+
+.menu_open {
+  visibility: visible;
+}
+
+/* Intro section BG Issue is Consistent */
 
 .intro-section {
   background-image: linear-gradient(rgba(17, 9, 9, 0.7), rgba(17, 9, 9, 0.3), rgba(255, 255, 255, 0.5)), url(Assets/main-background.jpg);
@@ -58,7 +66,6 @@
   padding-left: 10%;
   font-size: 2.5rem;
   text-decoration-color: #ec5242;
-  text-decoration: var(--black) solid 1px;
 }
 
 .intro-box-paragraph {
@@ -253,18 +260,26 @@
 .partnerlogoparent > * {
   flex: 1 1 50px;
   max-width: 33%;
-  padding: 34px;;
+  padding: 34px;
 }
 
 /* Desktop Adjustments */
 
 @media (min-width: 768px) {
+  .hamburguer-menu {
+    visibility: hidden;
+  }
+
+  .upperNavSocial {
+    visibility: visible;
+  }
+
   .upperNav {
     display: flex;
     flex-direction: row;
     background-color: black;
     color: white;
-    padding-left: 50%;
+    padding-left: 75%;
     gap: 10px;
     align-items: center;
     height: 1.5rem;
@@ -355,11 +370,11 @@
 }
 
 .sub {
-
+  align-items: center;
 }
 
 .pasteventssection {
-
+  align-items: center;
 }
 
 .eventphotoparent {
