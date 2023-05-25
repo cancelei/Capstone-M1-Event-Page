@@ -89,7 +89,6 @@
   font-size: 2.4rem;
   text-align: left;
   letter-spacing: 0;
-  text-stroke: var(--grey);
 }
 
 .intro-location {
@@ -363,7 +362,6 @@
   align-self: center;
   align-content: center;
   text-align: center;
-  align-content: center;
   width: 35%;
   height: 35%;
   margin-left: 33%;
@@ -384,5 +382,5 @@
 
 .eventphotoparent > * {
   min-width: 350px;
-  padding: min(20px, 2%);
+  padding: 20px;
 }
