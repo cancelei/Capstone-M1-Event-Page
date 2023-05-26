@@ -2,7 +2,7 @@
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <h3><b>Cancelei's Hello Project</b></h3>
+  <h3><b>Cancelei's Capstone Project</b></h3>
 
 </div>
 
@@ -149,5 +149,7 @@ Ed and Jav helped me in concluding this project, they are part of my current wor
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+Icons by Surang (<a href="https://www.flaticon.com/br/icones-gratis/agricultura-e-jardinagem" title="agricultura e jardinagem ícones">Agricultura e jardinagem ícones criados por surang - Flaticon</a>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -1,7 +1,15 @@
+:root {
+  --orange: #ec5242;
+  --grey: #d3d3d3;
+  --black: #272a31;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
 }
 
 .hide {
@@ -10,4 +18,457 @@
 
 .show {
   visibility: visible;
+}
+
+/* Upper Nav Styling */
+
+.upperNavSocial {
+  display: none;
+}
+
+/* Nav section */
+
+#nav-logo {
+  width: 80px;
+  height: 80px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.nav-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  font-size: 1rem;
+}
+
+#nav-button {
+  border: 4px solid var(--primary-color);
+  padding: 10px;
+  width: 8em;
+  text-align: center;
+}
+
+.close {
+  display: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+
+.burger {
+  display: none;
+  margin: 30px 0 0 40px;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Intro section BG Issue is Consistent */
+
+.intro-section {
+  background-image: linear-gradient(rgba(17, 9, 9, 0.7), rgba(17, 9, 9, 0.3), rgba(255, 255, 255, 0.5)), url(Assets/main-background.jpg);
+  height: auto;
+  background-size: cover;
+}
+
+.intro-upperTitle {
+  padding-top: 10%;
+  padding-left: 10%;
+  color: var(--orange);
+  font-size: 3rem;
+}
+
+.intro-mainTitle {
+  color: var(--orange);
+  opacity: 0.99;
+  padding-left: 10%;
+  font-size: 2.5rem;
+  text-decoration-color: #ec5242;
+}
+
+.intro-box-paragraph {
+  padding-left: 1px;
+  border: 2px solid white;
+  background-color: var(--grey);
+  margin: 2% 5% 2% 12%;
+  width: 45%;
+  opacity: 0.66;
+}
+
+.intro-paragraph {
+  padding: 2%;
+  line-height: 220%;
+  font-size: 1.125em;
+  text-align: justify;
+}
+
+.intro-date {
+  padding: 5% 0 5% 10%;
+  font-size: 2.4rem;
+  text-align: left;
+  letter-spacing: 0;
+}
+
+.intro-location {
+  padding-left: 10%;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+/* Section Main Program */
+
+.Main-program {
+  color: white;
+  background-color: var(--black);
+  background-image: url(Assets/pattern_bg_new.png);
+  padding-bottom: 15%;
+  height: 100%;
+}
+
+.Main-program-cards {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitle {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  width: auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.1);
+  gap: 10px;
+  margin: 1% 1%;
+
+  /* padding: 10px 5px 10px 2px; */
+  flex-grow: 1;
+  width: 95%;
+}
+
+.cardicon {
+  width: 64px;
+  height: 58px;
+  align-self: center;
+  margin: 0 0.5% 0 0;
+  padding: 0 2%;
+}
+
+.cardtitle {
+  color: var(--orange);
+  align-self: center;
+  font-size: 14px;
+  min-width: 71px;
+}
+
+.cardparagraph {
+  color: white;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  opacity: 1;
+  align-self: center;
+}
+
+/* Section Speakers */
+
+.titlespeakers {
+  text-align: center;
+  padding: 5% 0;
+}
+
+.underline {
+  display: block;
+  margin: auto;
+}
+
+.speakerparent1,
+.speakerparent2,
+.speakerparent3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.speakercard {
+  /* padding: 3% 2.5%; */
+  margin: 20px;
+}
+
+.speaker-header {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0.5;
+  height: 100%;
+}
+
+.speakerimg {
+  padding: 1%;
+  height: 100%;
+}
+
+.headerdescription {
+  padding: 0 3%;
+  height: 10vh;
+  width: 100%;
+}
+
+.speakername {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.speakertitle {
+  color: var(--orange);
+  font-size: 13px;
+}
+
+.speakerdescription {
+  padding: 0 5%;
+  font-size: 13px;
+  text-align: justify;
+  height: 100%;
+}
+
+/* Speaker Button */
+
+.btnspeaker {
+  align-items: center;
+  width: 88%;
+  height: 45px;
+  margin: 0 6%;
+  font-size: 14px;
+  background-color: white;
+  border: solid 1px var(--grey);
+  border-radius: 4px;
+}
+
+.btnJoin {
+  color: white;
+  background-color: var(--orange);
+  width: 46%;
+  margin-left: 27%;
+  height: 50px;
+  border-style: outset;
+  border: none;
+  font-size: 14px;
+}
+
+.sectionfooter {
+  background-color: var(--black);
+  height: auto;
+}
+
+.partner {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.partnerlogoparent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.partnerlogoparent > * {
+  flex: 1 1 50px;
+  max-width: 33%;
+  padding: 34px;
+}
+
+/* Desktop Adjustments */
+
+@media (min-width: 768px) {
+  .close {
+    display: none;
+    position: fixed;
+    left: 60%;
+    z-index: 565621545;
+    margin-top: 1.3em;
+  }
+
+  .close.active {
+    display: block;
+  }
+
+  .above-nav {
+    display: none;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    opacity: 0.9;
+    width: 70%;
+    background-color: #272a31;
+    z-index: 88888;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+    gap: 30px;
+  }
+
+  .nav-list li {
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+  }
+
+  .nav-list li a {
+    color: aliceblue;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  #nav-logo {
+    width: 60px;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 76%;
+    bottom: 0;
+    top: 0;
+    z-index: 5654656565;
+    margin-top: 1em;
+  }
+
+  #nav-button {
+    border: 4px solid var(--primary-color);
+    padding: 10px;
+    width: 8em;
+  }
+
+  .hamburguer-menu {
+    display: none;
+  }
+
+  .upperNavSocial {
+    display: block;
+  }
+
+  .upperNav {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    padding-left: 75%;
+    gap: 10px;
+    align-items: center;
+    height: 1.5rem;
+    text-decoration: none;
+  }
+
+  .upperNavLinks {
+    text-decoration: none;
+    color: white;
+  }
+
+  .NavLogo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .speakerdescriptiondesktop {
+    visibility: visible;
+    font-size: 14px;
+  }
+
+  .speakerdescription {
+    display: none;
+  }
+
+  .speakerparent1,
+  .speakerparent2,
+  .speakerparent3 {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+  }
+
+  .speakercard {
+    margin: 20px;
+    width: 50%;
+  }
+
+  .speakertitle {
+    font-size: 13px;
+    height: 50%;
+  }
+
+  .speakername {
+    font-size: 22px;
+  }
+
+  .Main-program-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /* padding: 1% 1%; */
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    min-height: 170px;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .btnspeaker {
+    display: none;
+  }
+}
+
+/* About Page */
+
+.ac {
+  align-items: center;
+  text-align: center;
+}
+
+.aboutmain {
+  background-color: white;
+}
+
+.eventlogobig {
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  width: 35%;
+  height: 35%;
+  margin-left: 33%;
+}
+
+.sub {
+  align-items: center;
+}
+
+.pasteventssection {
+  align-items: center;
+}
+
+.eventphotoparent {
+  display: flex;
+  flex-direction: column;
+}
+
+.eventphotoparent > * {
+  min-width: 350px;
+  padding: 5% 5% 1% 5%;
 }
