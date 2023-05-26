@@ -292,16 +292,6 @@ a {
 /* Desktop Adjustments */
 
 @media (min-width: 768px) {
-  .burger {
-    display: block;
-    position: absolute;
-    z-index: 500;
-  }
-
-  .burger.active {
-    display: none;
-  }
-
   .close {
     display: none;
     position: fixed;
