@@ -88,17 +88,30 @@ Clone this repository to your desired folder:
 
 ### Install
 
-Install this project with:
+Install Node Package by running:
 
-N/A
+- npm install
 
 ### Usage
 
-N/A
+- In other to use the repo you either to create a branch to create new features.
+- But in order to run the project use the commands below:
+  - npm run build (It will create a production ready file)
+  - npm start (It will run the server on your local machine)
 
-### Run tests
+### Run Linters (Testing)
 
-N/A
+I have added Linters different kinds of Linters to help avoid typos and ensure the best practices of the code base.
+So while using this repository if you need to check your work no matter if you have worked on HTML or CSS, or even JS you can use the commands below.
+
+- To run the linter test on index.html or any HTML file. Use the below command:
+npx hint . 
+
+-To run linter test on Stylesheets (CSS or sass). Use the below command:
+npx Stylelint "**/*.{css,scss}"
+
+- To run linter test on ES Lint (JS). Use the below command:
+npx eslint .
 
 ### Deployment
 
@@ -121,7 +134,9 @@ N/A
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-N/A
+- Improve UX Experience for the Event
+- Add form
+- Add Newsletter Subscription form
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,7 +153,7 @@ N/A
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Ed and Jav helped me in concluding this project, they are part of my current working and standup teams.
+N/A
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
@@ -151,5 +166,7 @@ Ed and Jav helped me in concluding this project, they are part of my current wor
 This project is [MIT](./LICENSE) licensed.
 
 Icons by Surang (<a href="https://www.flaticon.com/br/icones-gratis/agricultura-e-jardinagem" title="agricultura e jardinagem ícones">Agricultura e jardinagem ícones criados por surang - Flaticon</a>)
+
+Original design idea by Cindy Shin in Behance.[https://www.behance.net/gallery/29845175/CC-Global-Summit-2015.]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
