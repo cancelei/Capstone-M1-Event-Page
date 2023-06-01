@@ -28,10 +28,10 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 Simple Hello Project <a name="about-project"></a>
+# 📖 Capstone Project <a name="about-project"></a>
 
 
-**Simple Hello Project** is simple project that includes a HTML file with corresponding CSS styling, and a backend setup that includes specific linters that verify Html/CSS files for auto-merge capability.
+**Event D-HTML Page** is simple project that includes a HTML file with corresponding CSS styling, and a backend setup that includes specific linters that verify Html/CSS files for auto-merge capability. It also has autogenerating parts that use Javascript with objects.
 
 ## 🛠 Built With Love and Passion<a name="built-with"></a>
 
@@ -60,7 +60,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- ** HTML**
+- ** HTML & JS**
 - ** CSS**
 - ** Linters to automatically check availability to merge on to the main(head) branch.**
 
@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- N/A
+- <a href="https://cancelei.github.io/Capstone-M1-Event-Page/dist/index.html">Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,7 +153,7 @@ N/A
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Original design idea by Cindy Shin in Behance.[https://www.behance.net/gallery/29845175/CC-Global-Summit-2015.]
+Original design idea by Cindy Shin in Behance.<a href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015.">BEHANCE</a>
 
 Icons by Surang (<a href="https://www.flaticon.com/br/icones-gratis/agricultura-e-jardinagem" title="agricultura e jardinagem ícones">Agricultura e jardinagem ícones criados por surang - Flaticon</a>)
 
