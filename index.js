@@ -31,42 +31,42 @@ const speakers = [
     name: 'Bernekie Ozie He',
     title: 'Ex-Astronaut and TED Speaker',
     description: "Motivation drives change. Famous for 'From Space to earth', 'How Team's and Status Quo's works' and 'The origin's of EQ: 360o Emotional Inteligence', motivational speaker and Master Coach.",
-    image: '../Assets/speaker_01.png',
+    image: 'speaker_01.png',
     linkedin: 'https://linkedin.com',
   },
   {
     name: 'Guntler Honda',
     title: 'CEO at Hawk Farm Operations',
     description: 'Motivational speaker and Leader Coach. Association for Farm Cooperatives, that uses tecnology to build a viable and sustainable ecossistem. Contribution to SDG 2030 and other initiatives.',
-    image: '../Assets/speaker_02.png',
+    image: 'speaker_02.png',
     linkedin: 'https://linkedin.com',
   },
   {
     name: 'Koi Zanty',
     title: 'Professor at Beijing University',
     description: 'Collaborative approach in a networked environment, co-production based on sharing open source software and Wikipedia. (Major books: The Green Frontier from 2020 to 2030)',
-    image: '/main/Assets/speaker_03.png',
+    image: 'speaker_03.png',
     linkedin: 'https://linkedin.com',
   },
   {
     name: 'Oxoki Humbert',
     title: 'PhD, Professor at South African University',
     description: "Extensive reaseach on Animals on the African Continent. Books: African Mamals, Relations of Insects with Plants, Rooiboos Tea and why it can't be cultivated outside of South Africa",
-    image: 'main/Assets/speaker_04.png',
+    image: 'speaker_04.png',
     linkedin: 'https://linkedin.com',
   },
   {
     name: 'Johanna Betley',
     title: 'Counsel Member at MIT',
     description: 'Focusing on Tecnology use in farming. How automation can improve the management costs and long term proftability for a better future.',
-    image: '/Main/Assets/speaker_05.png',
+    image: 'speaker_05.png',
     linkedin: 'https://linkedin.com',
   },
   {
     name: 'John Witt',
     title: 'Professor at Harvard Soil Studies',
     description: 'Focusing on a collaborative approach in a networked environment, we created the concept of co-production based on sharing with open source software and Wikipedia. (Major books: The Wealth of the Network, Penguins and Leviathan)',
-    image: 'Main/Assets/speaker_06.png',
+    image: 'speaker_06.png',
     linkedin: 'https://linkedin.com',
   },
 ];
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const speakerImg = document.createElement('img');
     speakerImg.classList.add('speakerimg');
-    speakerImg.src = `/Assets/Speakers/${speaker.image}`;
+    speakerImg.src = `../Assets/Speakers/${speaker.image}`;
     speakerImg.alt = `Foto of ${speaker.name}`;
     speakerHeader.appendChild(speakerImg);
 
