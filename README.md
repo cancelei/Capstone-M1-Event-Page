@@ -28,10 +28,10 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 Simple Hello Project <a name="about-project"></a>
+# 📖 Capstone Project <a name="about-project"></a>
 
 
-**Simple Hello Project** is simple project that includes a HTML file with corresponding CSS styling, and a backend setup that includes specific linters that verify Html/CSS files for auto-merge capability.
+**Event D-HTML Page** is simple project that includes a HTML file with corresponding CSS styling, and a backend setup that includes specific linters that verify Html/CSS files for auto-merge capability. It also has autogenerating parts that use Javascript with objects.
 
 ## 🛠 Built With Love and Passion<a name="built-with"></a>
 
@@ -60,7 +60,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- ** HTML**
+- ** HTML & JS**
 - ** CSS**
 - ** Linters to automatically check availability to merge on to the main(head) branch.**
 
@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- N/A
+- <a href="https://cancelei.github.io/Capstone-M1-Event-Page/dist/index.html">Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,17 +88,30 @@ Clone this repository to your desired folder:
 
 ### Install
 
-Install this project with:
+Install Node Package by running:
 
-N/A
+- npm install
 
 ### Usage
 
-N/A
+- In other to use the repo you either to create a branch to create new features.
+- But in order to run the project use the commands below:
+  - npm run build (It will create a production ready file)
+  - npm start (It will run the server on your local machine)
 
-### Run tests
+### Run Linters (Testing)
 
-N/A
+I have added Linters different kinds of Linters to help avoid typos and ensure the best practices of the code base.
+So while using this repository if you need to check your work no matter if you have worked on HTML or CSS, or even JS you can use the commands below.
+
+- To run the linter test on index.html or any HTML file. Use the below command:
+npx hint . 
+
+-To run linter test on Stylesheets (CSS or sass). Use the below command:
+npx Stylelint "**/*.{css,scss}"
+
+- To run linter test on ES Lint (JS). Use the below command:
+npx eslint .
 
 ### Deployment
 
@@ -121,7 +134,9 @@ N/A
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-N/A
+- Improve UX Experience for the Event
+- Add form
+- Add Newsletter Subscription form
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,18 +153,13 @@ N/A
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Ed and Jav helped me in concluding this project, they are part of my current working and standup teams.
+Original design idea by Cindy Shin in Behance.<a href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015.">BEHANCE</a>
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+Icons by Surang (<a href="https://www.flaticon.com/br/icones-gratis/agricultura-e-jardinagem" title="agricultura e jardinagem ícones">Agricultura e jardinagem ícones criados por surang - Flaticon</a>)
 
-> N/A
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-Icons by Surang (<a href="https://www.flaticon.com/br/icones-gratis/agricultura-e-jardinagem" title="agricultura e jardinagem ícones">Agricultura e jardinagem ícones criados por surang - Flaticon</a>)
+This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
