@@ -37,6 +37,7 @@ body.body_overflowhidden {
 }
 
 .nav_logo {
+  display: none;
   width: 60px;
   height: 60px;
 }
@@ -118,22 +119,21 @@ body.body_overflowhidden {
 /* Intro section BG Issue is Consistent */
 
 .intro-section {
-  background-image: linear-gradient(rgba(17, 9, 9, 0.7), rgba(17, 9, 9, 0.3), rgba(255, 255, 255, 0.5)), url(Assets/main-background.jpg);
+  background-image: linear-gradient(rgba(192, 182, 137, 0.7), rgba(17, 9, 9, 0.3), rgba(255, 255, 255, 0.5)), url(Assets/main-background.jpg);
   height: auto;
   background-size: cover;
 }
 
 .intro-upperTitle {
-  padding-top: 10%;
-  padding-left: 10%;
+  padding: 10% 5% 0 5%;
   color: var(--orange);
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .intro-mainTitle {
   color: var(--orange);
   opacity: 0.99;
-  padding-left: 10%;
+  padding: 0 10% 0 8%;
   font-size: 2.5rem;
   text-decoration-color: #ec5242;
 }
@@ -143,7 +143,7 @@ body.body_overflowhidden {
   border: 2px solid white;
   background-color: var(--grey);
   margin: 2% 5% 2% 12%;
-  width: 45%;
+  width: 80%;
   opacity: 0.66;
 }
 
@@ -156,7 +156,7 @@ body.body_overflowhidden {
 
 .intro-date {
   padding: 5% 0 5% 10%;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   text-align: left;
   letter-spacing: 0;
 }
@@ -190,6 +190,10 @@ body.body_overflowhidden {
   text-align: center;
   font-size: 24px;
   width: auto;
+}
+
+.mainTitleAbout {
+  color: var(--black);
 }
 
 .cards {
@@ -227,6 +231,10 @@ body.body_overflowhidden {
 
 /* Section Speakers */
 
+.speakersection {
+  padding-bottom: 50px;
+}
+
 .titlespeakers {
   text-align: center;
   padding: 5% 0;
@@ -242,11 +250,16 @@ body.body_overflowhidden {
 .speakerparent3 {
   display: flex;
   flex-direction: column;
+  padding-bottom: 5%;
+  height: 65vh;
+  justify-content: space-around;
 }
 
 .speakercard {
   /* padding: 3% 2.5%; */
+  height: 20vh;
   margin: 20px;
+  padding-bottom: 2%;
 }
 
 .speaker-header {
@@ -259,16 +272,17 @@ body.body_overflowhidden {
 .speakerimg {
   padding: 1%;
   height: 100%;
+  width: 120px;
 }
 
 .headerdescription {
-  padding: 0 3%;
-  height: 10vh;
+  padding: 0 1%;
+  height: 20vh;
   width: 100%;
 }
 
 .speakername {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--black);
 }
 
@@ -313,6 +327,10 @@ body.body_overflowhidden {
   height: auto;
 }
 
+.sectionpartnersAbout {
+  background-color: white;
+}
+
 .partner {
   text-align: center;
   padding-top: 5%;
@@ -321,19 +339,60 @@ body.body_overflowhidden {
 .partnerlogoparent {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  padding-bottom: 15%;
 }
 
 .partnerlogoparent > * {
   flex: 1 1 50px;
-  max-width: 33%;
-  padding: 34px;
+  max-width: 25%;
+  padding: 1%;
+}
+
+.sectionfooter {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 5% 5% 5% 15%;
+  align-items: center;
+}
+
+.footertitle {
+  color: var(--black);
+  width: 100%;
+}
+
+.titleabout {
+  color: white;
+}
+
+.footerimg {
+  width: 250px;
+}
+
+.footerimgabout {
+  width: 100px;
+  max-height: 30px;
+  align-items: center;
+}
+
+.aboutfooter {
+  background-color: var(--black);
 }
 
 /* Desktop Adjustments */
 
 @media (min-width: 768px) {
+  /* speaker section Desktop */
+  .speakersection {
+    padding-bottom: 2%;
+  }
+
   /* Desktop Nav */
+  .nav_logo {
+    display: block;
+  }
+
   .nav-mobile {
     display: none;
   }
@@ -350,10 +409,11 @@ body.body_overflowhidden {
     display: flex;
     list-style: none;
     margin-left: auto;
-    margin-right: 10%;
-    gap: 10px;
+    margin-right: 5%;
+    gap: 12%;
     text-decoration: none;
     color: var(--black);
+    width: 65vw;
   }
 
   .nav-list-desktop > li {
@@ -383,8 +443,6 @@ body.body_overflowhidden {
     flex-direction: row;
     background-color: black;
     color: white;
-
-    /* padding-left: 75%; */
     padding: 10px 10% 10px 70vw;
     gap: 10px;
     align-items: center;
@@ -397,6 +455,28 @@ body.body_overflowhidden {
     color: white;
   }
 
+/* Intro Section */
+
+  .intro-paragraph {
+    /* padding: 2%; */
+    line-height: 220%;
+    font-size: 1.125em;
+    text-align: justify;
+    width: 70vw;
+    margin: 0;
+  }
+
+  .intro-box-paragraph {
+    margin-left: 10%;
+    padding: 0;
+    width: 70vw;
+  }
+
+  .intro-date {
+    align-self: center;
+  }
+
+  /* Spearker section */
   .speakerdescriptiondesktop {
     visibility: visible;
     font-size: 14px;
@@ -412,6 +492,13 @@ body.body_overflowhidden {
     display: flex;
     flex-direction: row;
     padding-bottom: 5%;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .speakerimg {
+    width: 170px;
+    height: 170px;
   }
 
   .speakercard {
@@ -421,7 +508,6 @@ body.body_overflowhidden {
 
   .speakertitle {
     font-size: 13px;
-    height: 50%;
   }
 
   .speakername {
@@ -445,6 +531,14 @@ body.body_overflowhidden {
   }
 
   .btnspeaker {
+    display: none;
+  }
+
+  .sectionfooter {
+    padding-left: 33%;
+  }
+
+  .sectionpartnersabout {
     display: none;
   }
 }
@@ -485,4 +579,15 @@ body.body_overflowhidden {
 .eventphotoparent > * {
   min-width: 350px;
   padding: 5% 5% 1% 5%;
+}
+
+@media (min-width: 768px) {
+  .eventphotoparent {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .sectionpartnersabout {
+    display: none;
+  }
 }
