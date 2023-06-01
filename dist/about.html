@@ -5,37 +5,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Fest</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://use.typekit.net/faw8xza.css">
 </head>
-<body>
-<!-- Section for upperNav -->
-
-  <section class="upperNav upperNavSocial">
-    <a class="upperNavSocial" href="https://medium.com"><img src="/Assets/mediumMediumIcon.svg" alt="Medium"></a>
-    <a class="upperNavSocial" href="https://twitter.com"><img src="/Assets/twittertwitterIcon.svg" alt="Twitter"></a>
-    <h5 alt="Choose Language upperNavSocial">English</h5>
-    <a class="upperNavLinks upperNavSocial" href="/"><h5>My Page</h5></a>
-    <a class="upperNavLinks upperNavSocial" href="/"><h5>Logout</h5></a>
-  </section>
-
-
-<!-- Navigation and Menu - Draft -->
-
-<nav class="nav">
-  <a href="index.html"><img id="nav-logo" src="Assets/Logo.png" alt="Event Logo"></a>
-  <ul class="nav-list">
-      <li><a id="about" href="about.html">About</a></li>
-      <li><a href="#">Program</a></li>
-      <li><a href="#">Join</a></li>
-      <li><a href="#">News</a></li>
-      <li><a id="nav-button" href="#">CC campaign</a></li>
-  </ul>
-      <img class="close" src="Assets/close.svg" alt="" srcset="">
-      <img class="burger" src="Assets/mobile_menu.png" alt="burger icon" srcset="">
-</nav>
-
-  <!-- Section About Intro and Contact -->
+<body class="">
+  <!-- Section for Extra upperNav ONLY Desktop -->
+  
+    <section class="upperNav upperNavSocial">
+      <a class="upperNavSocial" href="https://medium.com"><img src="/Assets/mediumMediumIcon.svg" alt="Medium"></a>
+      <a class="upperNavSocial" href="https://twitter.com"><img src="/Assets/twittertwitterIcon.svg" alt="Twitter"></a>
+      <h5 alt="Choose Language upperNavSocial">English</h5>
+      <a class="upperNavLinks upperNavSocial" href="/"><h5>My Page</h5></a>
+      <a class="upperNavLinks upperNavSocial" href="/"><h5>Logout</h5></a>
+    </section>
+  
+  <!-- Mobile Menu - IN DRAFT -->
+  
+  <nav class="nav-mobile">
+    <a href="/dist/index.html"><img class="nav_logo" src="/Assets/Logo.png" alt="Event Logo"></a>
+    <div class="mobile_nav_open">
+      <img class="close" src="/Assets/close.svg" alt="Close button" srcset="">
+      <ul class="nav-list-mobile">
+          <li><a class="mobileMenuItems" id="about" href="/dist/about.html">About</a></li>
+          <li><a class="mobileMenuItems" href="#">Program</a></li>
+          <li><a class="mobileMenuItems" href="#">Join</a></li>
+          <li><a class="mobileMenuItems" href="#">News</a></li>
+          <li><a class="mobileMenuItems" id="nav-button" href="#">CC campaign</a></li>
+      </ul>
+    </div>
+        <img class="burger" src="/Assets/mobile_menu.png" alt="burger icon" srcset="">
+  </nav>
+  
+  <!-- Desktop MENU - FINISHED! -->
+  
+  <nav class="nav_desktop">
+    <a href="/dist/index.html"><img class="nav_logo" src="/Assets/Logo.png" alt="Event Logo"></a>
+    <ul class="nav-list-desktop">
+        <li><a class="menu_items_desk" id="about" href="/dist/about.html">About</a></li>
+        <li><a class="menu_items_desk" href="#">Program</a></li>
+        <li><a class="menu_items_desk" href="#">Join</a></li>
+        <li><a class="menu_items_desk" href="#">News</a></li>
+        <li><a class="menu_items_desk highlight" id="nav-button" href="#">Get your Spot</a></li>
+    </ul>
+  </nav>
+    <!-- Section About Intro and Contact -->
   <section class="intro-section">
     <div>
       <h2 class="intro-upperTitle ac">"Hello! Growing World!"</h2>
@@ -53,9 +66,9 @@
   <section class="aboutmain">
 
     <br><h4 class="titlespeakers">Permaculture 2023 Logo</h4>
-      <img class="underline" src="Assets/title_underlineMain_program.svg" alt="underline">
+      <img class="underline" src="/Assets/title_underlineMain_program.svg" alt="underline">
       <br><br>
-      <img class="eventlogobig" src="Assets/Logo.png"></img><br><br>
+      <img class="eventlogobig" src="/Assets/Logo.png"></img><br><br>
   </section>
 
   <!-- Section Past Events Section -->
@@ -63,13 +76,13 @@
     <h3 class="titlespeakers">See Past Events</h3>
 
 
-    <img class="underline" src="Assets/title_underlineMain_program.svg" alt="underline">
+    <img class="underline" src="/Assets/title_underlineMain_program.svg" alt="underline">
     <br><br>
     <h4 class="sub ac">Find other initiatives from the same Creators.</h4>
     <br>
     <div class="eventphotoparent">
-      <img src="Assets/About/about_2011.png" alt="Event in 2011">
-      <img src="Assets/About/about_2013.png" alt="Event in 2013">
+      <img src="/Assets/About/about_2011.png" alt="Event in 2011">
+      <img src="/Assets/About/about_2013.png" alt="Event in 2013">
     </div>
 <br>
 <button class="btnspeaker">MORE</button>
@@ -77,19 +90,19 @@
   </section>
   <footer class="sectionfooter">
     <h3 class="partner mainTitle">Partner</h3><br>
-    <img class="underline" src="Assets/title_underlineMain_program.svg" alt="underline">
+    <img class="underline" src="/Assets/title_underlineMain_program.svg" alt="underline">
     <br>
     <div class="partnerlogoparent">
-      <img src="Assets/Partner/airbnb 1partner_.svg" alt="Airbnb">
-      <img src="Assets/Partner/daumkakaologo 1partner_.svg" alt="Kakau">
-      <img src="Assets/Partner/googlekorea 1partner_.svg" alt="Google">
-      <img src="Assets/Partner/mozilla 1partner_.svg" alt="Mozilla">
-      <img src="Assets/Partner/naver 1partner_.svg" alt="Naver">
+      <img src="/Assets/Partner/airbnb 1partner_.svg" alt="Airbnb">
+      <img src="/Assets/Partner/daumkakaologo 1partner_.svg" alt="Kakau">
+      <img src="/Assets/Partner/googlekorea 1partner_.svg" alt="Google">
+      <img src="/Assets/Partner/mozilla 1partner_.svg" alt="Mozilla">
+      <img src="/Assets/Partner/naver 1partner_.svg" alt="Naver">
     </div>
 
   </footer>
 
 <!-- Javascript link -->
-  <script src="index.js"></script>
+  <script src="../index.js"></script>
 </body>
 </html>

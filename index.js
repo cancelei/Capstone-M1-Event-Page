@@ -1,20 +1,30 @@
 const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav-list');
+const nav = document.querySelector('.nav-list-mobile');
 const close = document.querySelector('.close');
+const navMobile = document.querySelector('.mobile_nav_open');
+const navLogo = document.querySelector('.nav_logo');
+const { body } = document;
 
 close.addEventListener('click', () => {
   nav.classList.toggle('active');
   close.classList.toggle('active');
   burger.classList.toggle('active');
+  navMobile.classList.toggle('active');
+  navLogo.classList.toggle('active');
+  body.classList.remove('body_overflowhidden');
 });
 
 burger.addEventListener('click', () => {
   nav.classList.toggle('active');
   burger.classList.toggle('active');
-  close.classList.add('active');
+  close.classList.toggle('active');
+  navMobile.classList.toggle('active');
+  navLogo.classList.toggle('active');
+  body.classList.add('body_overflowhidden');
 });
 
 // Speaker info
+const speakerSection = document.querySelector('.speakersection');
 
 const speakers = [
   {
@@ -61,55 +71,54 @@ const speakers = [
   },
 ];
 
-const speakerSection = document.querySelector('.speakersection');
-
 const numParents = Math.ceil(speakers.length / 2);
 
-for (let i = 1; i <= numParents; i + 1) {
-  const speakerParent = document.createElement('div');
-  speakerParent.classList.add(`speakerparent${i}`);
-  speakerSection.appendChild(speakerParent);
-}
+document.addEventListener('DOMContentLoaded', () => {
+  for (let i = 1; i <= numParents; i += 1) {
+    const speakerParent = document.createElement('div');
+    speakerParent.classList.add(`speakerparent${i}`);
+    speakerSection.appendChild(speakerParent);
+  }
 
-speakers.forEach((speaker, index) => {
-  const parentIndex = Math.floor(index / 2) + 1;
-  const speakerParent = document.querySelector(`.speakerparent${parentIndex}`);
-  const speakerCard = document.createElement('div');
-  speakerCard.classList.add('speakercard');
+  speakers.forEach((speaker, index) => {
+    const parentIndex = Math.floor(index / 2) + 1;
+    const speakerParent = document.querySelector(`.speakerparent${parentIndex}`);
+    const speakerCard = document.createElement('div');
+    speakerCard.classList.add('speakercard');
 
-  const speakerHeader = document.createElement('div');
-  speakerHeader.classList.add('speaker-header');
+    const speakerHeader = document.createElement('div');
+    speakerHeader.classList.add('speaker-header');
 
-  const speakerImg = document.createElement('img');
-  speakerImg.classList.add('speakerimg');
-  speakerImg.src = `/Assets/Speakers/${speaker.image}`;
-  speakerImg.alt = `Foto of ${speaker.name}`;
-  speakerHeader.appendChild(speakerImg);
+    const speakerImg = document.createElement('img');
+    speakerImg.classList.add('speakerimg');
+    speakerImg.src = `/Assets/Speakers/${speaker.image}`;
+    speakerImg.alt = `Foto of ${speaker.name}`;
+    speakerHeader.appendChild(speakerImg);
 
-  const headerDescription = document.createElement('div');
-  headerDescription.classList.add('headerdescription');
+    const headerDescription = document.createElement('div');
+    headerDescription.classList.add('headerdescription');
 
-  const speakerName = document.createElement('a');
-  speakerName.classList.add('speakername');
-  speakerName.href = speaker.linkedin;
-  speakerName.textContent = speaker.name;
-  headerDescription.appendChild(speakerName);
+    const speakerName = document.createElement('a');
+    speakerName.classList.add('speakername');
+    speakerName.href = speaker.linkedin;
+    speakerName.textContent = speaker.name;
+    headerDescription.appendChild(speakerName);
 
-  const speakerTitle = document.createElement('div');
-  speakerTitle.classList.add('speakertitle');
-  speakerTitle.textContent = speaker.title;
-  headerDescription.appendChild(speakerTitle);
+    const speakerTitle = document.createElement('div');
+    speakerTitle.classList.add('speakertitle');
+    speakerTitle.textContent = speaker.title;
+    headerDescription.appendChild(speakerTitle);
 
-  const speakerDescriptionDesktop = document.createElement('div');
-  speakerDescriptionDesktop.classList.add('speakerdescriptiondesktop');
-  speakerDescriptionDesktop.textContent = speaker.description;
-  headerDescription.appendChild(speakerDescriptionDesktop);
+    const speakerDescriptionDesktop = document.createElement('div');
+    speakerDescriptionDesktop.classList.add('speakerdescriptiondesktop');
+    speakerDescriptionDesktop.textContent = speaker.description;
+    headerDescription.appendChild(speakerDescriptionDesktop);
 
-  speakerHeader.appendChild(headerDescription);
-  speakerCard.appendChild(speakerHeader);
-  speakerParent.appendChild(speakerCard);
+    speakerHeader.appendChild(headerDescription);
+    speakerCard.appendChild(speakerHeader);
+    speakerParent.appendChild(speakerCard);
+  });
 });
-
 // Creation of the button and some <br> tags
 
 const moreButton = document.createElement('button');
