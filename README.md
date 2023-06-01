@@ -153,20 +153,13 @@ N/A
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-N/A
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> N/A
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
+Original design idea by Cindy Shin in Behance.[https://www.behance.net/gallery/29845175/CC-Global-Summit-2015.]
 
 Icons by Surang (<a href="https://www.flaticon.com/br/icones-gratis/agricultura-e-jardinagem" title="agricultura e jardinagem ícones">Agricultura e jardinagem ícones criados por surang - Flaticon</a>)
 
-Original design idea by Cindy Shin in Behance.[https://www.behance.net/gallery/29845175/CC-Global-Summit-2015.]
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
