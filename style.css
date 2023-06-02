@@ -400,8 +400,6 @@ body.body_overflowhidden {
   .nav_desktop {
     display: flex;
     flex-direction: row;
-
-    /* align-content: right; */
     margin: 1% 0 0.5% 2%;
   }
 
