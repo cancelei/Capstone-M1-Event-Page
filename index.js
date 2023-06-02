@@ -9,7 +9,7 @@ close.addEventListener('click', () => {
   nav.classList.toggle('active');
   close.classList.toggle('active');
   burger.classList.toggle('active');
-  navMobile.classList.toggle('active');
+  navMobile.classList.toggle("active");
   navLogo.classList.toggle('active');
   body.classList.remove('body_overflowhidden');
 });
@@ -66,7 +66,7 @@ const speakers = [
     name: 'John Witt',
     title: 'Professor at Harvard Soil Studies',
     description: 'Focusing on a collaborative approach in a networked environment, we created the concept of co-production based on sharing with open source software and Wikipedia. (Major books: The Wealth of the Network, Penguins and Leviathan)',
-    image: 'speaker_06.png',
+    image: '/Assets/speaker_06.png',
     linkedin: 'https://linkedin.com',
   },
 ];
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const speakerTitle = document.createElement('div');
     speakerTitle.classList.add('speakertitle');
     speakerTitle.textContent = speaker.title;
-    headerDescription.appendChild(speakerTitle);
+    headerDescription.eventlistener(speakerTitle);
 
     const speakerDescriptionDesktop = document.createElement('div');
     speakerDescriptionDesktop.classList.add('speakerdescriptiondesktop');
